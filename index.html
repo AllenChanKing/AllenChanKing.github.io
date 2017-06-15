@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<div class="spinner">
+		<div class="double-bounce1"></div>
+		<div class="double-bounce2"></div>
+	</div>
+	<!-- 右上角音乐图标 -->
+	<div class="disk"></div>
+	<!-- 下滑箭头 -->
+	<div class="arrow"></div>
+	<!-- 全屏滚动容器 -->
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	    	<!-- 第一屏 视频 -->
+	        <div class="swiper-slide">
+	        	<video id="video" src="./sources/video/IMG_1097.MP4">
+	        		您的浏览器不支持 video 标签。
+	        	</video>
+	        	<div class="cover">
+	        		<span class="btn-play"></span>
+	        	</div>
+	        </div>
+
+	        <div class="swiper-slide">
+	        	Slide 2
+	        </div>
+
+	        <div class="swiper-slide">
+	        	Slide 3
+	        </div>
+	    </div>
+	</div>
+
+	<!-- 背景音乐 -->
+	<audio id="bgm" src="./sources/music/Caves.mp3" autoplay="autoplay" loop="loop">
+		您的浏览器不支持 audio 标签。
+	</audio>
+</body>
+<script src="./lib/jquery-3.2.1.min.js"></script>
+<script src="./lib/swiper.jquery.min.js"></script>
+<script src="./js/index.js"></script>
+</html>
